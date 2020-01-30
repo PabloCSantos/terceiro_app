@@ -10,5 +10,12 @@ class PaginasEstaticasControllerTest < ActionDispatch::IntegrationTest
     get paginas_estaticas_ajuda_url
     assert_response :success
   end
+  
+  test "should get sobre" do
+    get paginas_estaticas_sobre_url
+    assert_response :success
+  end
+  
+  
 
 end
