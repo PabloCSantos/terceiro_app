@@ -5,10 +5,15 @@ class PaginasEstaticasControllerTest < ActionDispatch::IntegrationTest
     @titulo_base = "Terceiro App Web II"
   end
 
+  test "should get root" do 
+    get root_url 
+    assert_response :success
+  end
+
   test "should get inicio" do
     get paginas_estaticas_inicio_url
     assert_response :success
-    assert_select "title" , "Início │ #{@titulo_base}"
+    assert_select "title" , "Inicio │ #{@titulo_base}"
   end
 
   test "should get ajuda" do

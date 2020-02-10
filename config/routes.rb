@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'paginas_estaticas/incio'
-  get 'paginas_estaticas/ajuda'
+ get 'paginas_estaticas/incio'
+ get 'paginas_estaticas/ajuda'
  get 'paginas_estaticas/sobre'
  get 'paginas_estaticas/contato'
-  root 'application#ola'
-
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+ root 'paginas_estaticas#incio'
+ 
 end

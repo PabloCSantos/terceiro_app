@@ -1,11 +1,18 @@
-<% provide(:title, "Início") %>
+<% provide(:title, "incio") %>
 
-
+<div class="center jumbotron">
 <h1>Terceiro App</h1>
-	<h1> Terceiro APP </h1>
-	<p> Este é o terceiro aplicativo Rails da disciplina
-	<strong> Desenvolvimento de Software para a WEB II </strong>
-	do curso de Sistemas de Informação em 
+
+<h2>
+	Este é o terceiro aplicativo Rails da disciplina
+	<strong> Desenvolvimento de Software para a web II </strong>
+	do curso de Sistemas de Informação em
 	<a href="http://ufal.edu.br/arapiraca/unidades-de-ensino/penedo">
 		Penedo
-	</a></p>
+	</a>
+</h2>
+
+<%= link_to 'Cadastre-se', '#', class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("brasao.png", alt: "UFAL", width: "50px"),
+	"https://ufal.br" %>
